@@ -1,4 +1,4 @@
-import { createStore } from "redux";
+import { createStore } from 'redux';
 
 // Define initial state
 const initialState = {
@@ -8,12 +8,12 @@ const initialState = {
 // Define reducer function
 export function reducer(state = initialState, action) {
   switch (action.type) {
-    case "INCREMENT":
+    case 'INCREMENT':
       return {
         ...state, // Copy existing state
         count: state.count + 1,
       };
-    case "DECREMENT":
+    case 'DECREMENT':
       return {
         ...state, // Copy existing state
         count: state.count - 1,

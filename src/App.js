@@ -1,11 +1,10 @@
-import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import TeamList from "./TeamList";
-import Counter from "./Counter";
-import "./App.css";
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import TeamList from './TeamList';
+import Counter from './Counter';
+import './App.css';
 
 function App() {
-
   return (
     <>
       <Navbar bg="primary" variant="dark" expand="lg">

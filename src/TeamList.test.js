@@ -1,12 +1,12 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import TeamList from "./TeamList";
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import TeamList from './TeamList';
 
-test("renders all team members", () => {
+test('renders all team members', () => {
   render(<TeamList />);
-  const names = ["Jiayang Hu", "Eugene Monnier", "Priyadarshini Raj"];
+  const names = ['Jiayang Hu', 'Eugene Monnier', 'Priyadarshini Raj'];
 
-  names.forEach((name) => {
+  names.forEach(name => {
     expect(screen.getByText(name)).toBeInTheDocument();
   });
 });

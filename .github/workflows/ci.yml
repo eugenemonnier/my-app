@@ -30,5 +30,3 @@ jobs:
 
       - name: Check code formatting
         run: npx prettier --check .
-
-

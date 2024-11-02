@@ -2,12 +2,9 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import TeamList from "./TeamList";
 import Counter from "./Counter";
-import { useSelector, useDispatch } from "react-redux";
 import "./App.css";
 
 function App() {
-  const count = useSelector((state) => state.count);
-  const dispatch = useDispatch();
 
   return (
     <>

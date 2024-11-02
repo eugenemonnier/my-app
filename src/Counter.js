@@ -1,8 +1,8 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 function Counter() {
-  const count = useSelector((state) => state.count);
+  const count = useSelector(state => state.count);
   const dispatch = useDispatch();
 
   return (
@@ -12,13 +12,13 @@ function Counter() {
       </p>
       <button
         className="btn btn-success mx-2"
-        onClick={() => dispatch({ type: "INCREMENT" })}
+        onClick={() => dispatch({ type: 'INCREMENT' })}
       >
         Increment
       </button>
       <button
         className="btn btn-danger mx-2"
-        onClick={() => dispatch({ type: "DECREMENT" })}
+        onClick={() => dispatch({ type: 'DECREMENT' })}
       >
         Decrement
       </button>
